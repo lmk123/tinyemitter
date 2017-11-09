@@ -1,6 +1,6 @@
 {
   "name": "tinyemitter",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Yet another tiny event emitter libary.",
   "main": "dist/tinyemitter.common.js",
   "module": "dist/tinyemitter.esm.js",

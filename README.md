@@ -28,7 +28,7 @@ const TinyEmitter = require('tinyemitter')
 
 ### Use with &lt;script&gt;
 
-Download tinyemitter.js from [unpkg](https://unpkg.com/tinyemitter/)([min](https://unpkg.com/tinyemitter/dist/tinyemitter.min.js)), then:
+Download tinyemitter.js from [unpkg](https://unpkg.com/tinyemitter)([min](https://unpkg.com/tinyemitter/dist/tinyemitter.min.js)), then:
 
 ```html
 <script src="path/to/tinyemitter.js"></script>

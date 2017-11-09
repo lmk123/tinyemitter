@@ -1,9 +1,9 @@
 const path = require('path')
-const fs = require('fs')
+const fs = require('fs-extra')
 const config = require('./config')
 
 // 清空输出目录
-// fs.emptyDirSync(path.resolve(__dirname, '../dist'))
+fs.emptyDirSync(path.resolve(__dirname, '../dist'))
 
 // 编译 js
 const rollup = require('rollup')
