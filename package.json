@@ -1,11 +1,11 @@
 {
   "name": "tinyemitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yet another tiny event emitter libary.",
   "main": "dist/tinyemitter.common.js",
   "module": "dist/tinyemitter.esm.js",
-  "unpkg": "tinyemitter.js",
-  "types": "declaration/src",
+  "unpkg": "dist/tinyemitter.js",
+  "types": "declaration/src/index.d.ts",
   "files": ["dist", "src", "declaration/src"],
   "scripts": {
     "build": "node build/build",
