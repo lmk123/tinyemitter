@@ -1,0 +1,33 @@
+{
+  "name": "tinyemitter",
+  "version": "0.0.1",
+  "description": "Yet another tiny event emitter libary.",
+  "main": "dist/tinyemitter.common.js",
+  "module": "dist/tinyemitter.esm.js",
+  "unpkg": "tinyemitter.js",
+  "types": "declaration/src",
+  "files": ["dist", "src", "declaration/src"],
+  "scripts": {
+    "build": "node build/build",
+    "test": "karma start",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/karma-jasmine": "0.0.29",
+    "coveralls": "^3.0.0",
+    "fs-extra": "^4.0.2",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-typescript": "^3.0.8",
+    "rollup": "^0.51.2",
+    "rollup-plugin-typescript2": "^0.8.0",
+    "typescript": "^2.6.1",
+    "uglify-js": "^3.1.8"
+  },
+  "license": "MIT"
+}
