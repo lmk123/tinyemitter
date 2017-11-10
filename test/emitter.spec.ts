@@ -40,4 +40,14 @@ describe('', () => {
     // @ts-ignore
     expect(emitter.e.d).toBeUndefined()
   })
+
+  it('在回调函数内调用 off 方法时，其他事件仍然会正常触发', () => {
+    const spy = jasmine.createSpy('h1')
+    emitter.on('e', function my() {
+      emitter.off('e', my)
+    })
+    emitter.on('e', spy)
+    emitter.emit('e')
+    expect(spy).toHaveBeenCalled()
+  })
 })

@@ -31,7 +31,9 @@ export default class TinyEmitter {
       if (events.length === 1) {
         delete e[name]
       } else {
-        events.splice(i, 1)
+        // 使用新数组替代原本的数组，
+        // 这是为了避免在回调函数内调用 off 方法时改变了数组导致前面的回调函数被跳过
+        e[name] = events.filter(h => h !== handle)
       }
     }
   }
