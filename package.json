@@ -10,7 +10,8 @@
   "scripts": {
     "build": "node build/build",
     "test": "karma start",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly":
+      "karma start --single-run --no-auto-watch && npm run build"
   },
   "devDependencies": {
     "@types/karma-jasmine": "0.0.29",
