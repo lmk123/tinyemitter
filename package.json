@@ -29,5 +29,6 @@
     "typescript": "^2.6.1",
     "uglify-js": "^3.1.8"
   },
+  "repository": "lmk123/tinyemitter",
   "license": "MIT"
 }
